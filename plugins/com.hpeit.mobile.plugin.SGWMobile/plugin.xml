@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.hpeit.mobile.plugin.SGWMobile"
+      version="1.1.0">
+    <name>SGWMobile</name>
+    <description>Prepare Cordova application to be integrated with the Security Gateway with SSO and certificate pinning</description>
+    <license>HPE</license>
+    <keywords>HPE,certificate,pinning</keywords>
+    
+    <dependency id="com.hpeit.mobile.plugin.nativeStorage" url="https://github.hpe.com/SecurityGateway/cordova-plugin-native-storage" />
+    <dependency id="com.hpeit.mobile.plugin.hpeCertPinning" url="https://github.hpe.com/SecurityGateway/cordova-plugin-hpe-cert-pinning" />
+
+	<asset src="hpeit.mobile.js" target="js/hpeit.mobile.js" />
+	
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET"/>
+		</config-file>
+	</platform>
+</plugin>

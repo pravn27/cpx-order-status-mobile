@@ -1,0 +1,58 @@
+{
+  "status": "S",
+  "message": "",
+  "data": {
+    "submittedOrders": {
+      "total": 55,
+      "range1": 1,
+      "range2": 0,
+      "range3": 54
+    },
+    "openOrders": {
+      "total": 42,
+      "range1": 1,
+      "range2": 0,
+      "range3": 41
+    },
+    "shippedOrders": {
+      "total": 11,
+      "range1": 0,
+      "range2": 0,
+      "range3": 11
+    },
+    "deliveredOrders": {
+      "total": 2,
+      "range1": 0,
+      "range2": 0,
+      "range3": 2
+    },
+    "cancelledOrders": {
+      "total": 0,
+      "range1": 0,
+      "range2": 0,
+      "range3": 0
+    },
+    "outstandingPODOrders": {
+      "total": 0,
+      "range1": 0,
+      "range2": 0,
+      "range3": 0
+    },
+    "outstandingInvOrders": {
+      "total": 0,
+      "range1": 0,
+      "range2": 0,
+      "range3": 0
+    },
+    "delayedInvOrders": {
+      "total": 0,
+      "range1": 0,
+      "range2": 0,
+      "range3": 0
+    },
+    "accountname": "Bechtle Logistik & Service Gmbh",
+    "firstname": "BD1_HPQ_Update",
+    "lastname": "HPE_SIT_USER_mishra_update",
+    "aaid": "eppro_emea"
+  }
+}

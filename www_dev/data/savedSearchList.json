@@ -1,0 +1,133 @@
+{
+  "total": 16,
+  "list": [
+    {
+      "id": 55336,
+      "creationDate": "2017-01-20T05:55:25.103Z",
+      "userId": 262803228,
+      "name": "Ingram",
+      "searchQuery": "{\"criteria\":[{\"value\":\"Ingram\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55335,
+      "creationDate": "2017-01-20T05:14:05.407Z",
+      "userId": 262803228,
+      "name": "a",
+      "searchQuery": "{\"criteria\":[{\"value\":\"a\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55216,
+      "creationDate": "2017-01-20T05:13:09.650Z",
+      "userId": 262803228,
+      "name": "Ingram",
+      "searchQuery": "{\"criteria\":[{\"value\":\"Ingram\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55215,
+      "creationDate": "2017-01-20T05:12:42.737Z",
+      "userId": 262803228,
+      "name": "a",
+      "searchQuery": "{\"criteria\":[{\"value\":\"a\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55334,
+      "creationDate": "2017-01-20T05:12:37.977Z",
+      "userId": 262803228,
+      "name": "a",
+      "searchQuery": "{\"criteria\":[{\"value\":\"a\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55333,
+      "creationDate": "2017-01-20T05:10:48.507Z",
+      "userId": 262803228,
+      "name": "a",
+      "searchQuery": "{\"criteria\":[{\"value\":\"a\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55331,
+      "creationDate": "2017-01-20T03:49:11.897Z",
+      "userId": 262803228,
+      "name": "av",
+      "searchQuery": "{\"criteria\":[{\"value\":\"av\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55212,
+      "creationDate": "2017-01-20T03:18:19.237Z",
+      "userId": 262803228,
+      "name": "c",
+      "searchQuery": "{\"criteria\":[{\"value\":\"c\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55211,
+      "creationDate": "2017-01-20T03:18:13.680Z",
+      "userId": 262803228,
+      "name": "b",
+      "searchQuery": "{\"criteria\":[{\"value\":\"b\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55330,
+      "creationDate": "2017-01-20T03:17:56.820Z",
+      "userId": 262803228,
+      "name": "a",
+      "searchQuery": "{\"criteria\":[{\"value\":\"a\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55329,
+      "creationDate": "2017-01-20T03:17:50.657Z",
+      "userId": 262803228,
+      "name": "1",
+      "searchQuery": "{\"criteria\":[{\"value\":\"1\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55210,
+      "creationDate": "2017-01-20T03:17:35.637Z",
+      "userId": 262803228,
+      "name": "av",
+      "searchQuery": "{\"criteria\":[{\"value\":\"av\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55328,
+      "creationDate": "2017-01-20T03:17:08.957Z",
+      "userId": 262803228,
+      "name": "avnet",
+      "searchQuery": "{\"criteria\":[{\"value\":\"avnet\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55209,
+      "creationDate": "2017-01-20T03:10:27.877Z",
+      "userId": 262803228,
+      "name": "int",
+      "searchQuery": "{\"criteria\":[{\"value\":\"int\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55325,
+      "creationDate": "2017-01-20T01:37:31.550Z",
+      "userId": 262803228,
+      "name": "avn",
+      "searchQuery": "{\"criteria\":[{\"value\":\"avn\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    },
+    {
+      "id": 55208,
+      "creationDate": "2017-01-19T23:01:52.280Z",
+      "userId": 262803228,
+      "name": "sas",
+      "searchQuery": "{\"criteria\":[{\"value\":\"sas\",\"type\":\"TERM\",\"key\":\"term\"}]}",
+      "advanced": false
+    }
+  ]
+}

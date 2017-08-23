@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.hpeit.mobile.plugin.hpeCertPinning"
+      version="1.0.1">
+    <name>hpeCertPinning</name>
+    <description>Prepare certificate pinning with HPE trusted Certificate Authorities. To be used with cordova-HTTP plugin (https://github.com/wymsee/cordova-HTTP)</description>
+    <license>HPE</license>
+    <keywords>HPE,certificate,pinning</keywords>
+    
+    <dependency id="cordova-plugin-http" />
+
+    <platform name="android">
+		<resource-file src="certs/HP_Ent_Private_SSL_CA.cer" target="assets" />
+		<resource-file src="certs/HPE_PrivateRootCA.cer" target="assets" />
+		<resource-file src="certs/Symantec_Class_3_Secure_Server_CA_G4.cer" target="assets" />
+		<resource-file src="certs/VeriSign_Class_3_Public_Primary_CA_G5.cer" target="assets" />
+		<resource-file src="certs/Symantec_Class_3_Secure_Server_SHA256_SSL_CA.cer" target="assets" />
+		<resource-file src="certs/VeriSign_Universal_Root_Certification_Authority.cer" target="assets" />
+    </platform>
+
+    <platform name="ios">    
+		<resource-file src="certs/HP_Ent_Private_SSL_CA.cer" />
+		<resource-file src="certs/HPE_PrivateRootCA.cer" />
+		<resource-file src="certs/Symantec_Class_3_Secure_Server_CA_G4.cer" />
+		<resource-file src="certs/VeriSign_Class_3_Public_Primary_CA_G5.cer" />
+		<resource-file src="certs/Symantec_Class_3_Secure_Server_SHA256_SSL_CA.cer" />
+		<resource-file src="certs/VeriSign_Universal_Root_Certification_Authority.cer" />
+    </platform> 
+</plugin>

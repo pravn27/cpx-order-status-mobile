@@ -1,0 +1,51 @@
+{
+  "name": "cordova-browserify-workflow",
+  "version": "0.0.0",
+  "description": "Template for writing cordova applications in a modular fashion with a neat workflow.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "author": "Roger Spotts",
+  "license": "MIT",
+  "browserify": {
+    "transform": [
+      "babelify",
+      "syntactical"
+    ]
+  },
+  "devDependencies": {
+    "babel-runtime": "^6.11.6",
+    "babelify": "^6.1.0",
+    "browserify": "~12.0.1",
+    "form-data": "^2.1.1",
+    "grommet": "1.2.1",
+    "grunt": "~0.4.5",
+    "grunt-browser-sync": "^0.9.1",
+    "grunt-contrib-copy": "~0.8.0",
+    "grunt-contrib-cssmin": "~0.10.0",
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-cordova-ng": "~0.2.5",
+    "grunt-ripple-emulator": "~0.1.0",
+    "grunt-shell": "~0.7.0",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-gravatar": "^2.0.0",
+    "react-intl": "^2.1.2",
+    "redux-thunk": "^2.1.0",
+    "react-modal": "^1.5.2",
+    "react-redux": "4.4.5",
+    "react-router": "2.7.0",
+    "redux": "3.6.0",
+    "superagent": "^1.1.0",
+    "syntactical": "0.0.1",
+    "material-ui": "0.16.0",
+    "rc-swipeout": "^1.2.5"
+  },
+  "dependencies": {
+    "react-native-loading-spinner-overlay": "^0.3.0",
+    "showdown": "^1.4.4",
+    "simple-assign": "^0.1.0"
+  }
+}

@@ -1,0 +1,212 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"ADBMobile_PhoneGap\"><param name=\"android-package\" onload=\"true\" value=\"com.adobe.ADBMobile_PhoneGap\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"File\"><param name=\"android-package\" value=\"org.apache.cordova.file.FileUtils\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<allow-navigation href=\"cdvfile:*\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"CordovaHttpPlugin\"><param name=\"android-package\" value=\"com.synconset.CordovaHttpPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SharedPreferencesDataStoragePlugin\"><param name=\"android-package\" value=\"com.hpeit.mobile.login.SharedPreferencesDataStoragePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"android-package\" value=\"org.apache.cordova.device.Device\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"android-package\" value=\"org.apache.cordova.inappbrowser.InAppBrowser\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"NetworkStatus\"><param name=\"android-package\" value=\"org.apache.cordova.networkinformation.NetworkManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"android-package\" value=\"org.apache.cordova.splashscreen.SplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"android-package\" value=\"org.apache.cordova.statusbar.StatusBar\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EmailComposer\"><param name=\"android-package\" value=\"de.appplant.cordova.emailcomposer.EmailComposer\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"PushPlugin\"><param name=\"android-package\" value=\"org.jboss.aerogear.cordova.push.PushPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 3
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\"com.hpe.cpx.prmobile.permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.hpe.cpx.prmobile.permission.C2D_MESSAGE\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:name=\"com.adobe.mobile.MessageFullScreenActivity\" android:theme=\"@android:style/Theme.Translucent\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.adobe.mobile.MessageNotificationHandler\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"com.google.android.gms.version\" android:value=\"@integer/google_play_services_version\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"org.jboss.aerogear.cordova.push.PushHandlerActivity\" xmlns:android=\"http://schemas.android.com/apk/res/android\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"org.jboss.aerogear.android.unifiedpush.AeroGearGCMMessageReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\" xmlns:android=\"http://schemas.android.com/apk/res/android\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><category android:name=\"com.hpe.cpx.prmobile\" /></intent-filter><meta-data android:name=\"DEFAULT_MESSAGE_HANDLER_KEY\" android:value=\"org.jboss.aerogear.cordova.push.NotificationMessageHandler\" /></receiver>",
+                            "count": 1
+                        }
+                    ],
+                    "/*": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"RareloopAppVersion\"><param name=\"android-package\" value=\"com.rareloop.cordova.appversion.RareloopAppVersion\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Keyboard\"><param name=\"android-package\" onload=\"true\" value=\"org.apache.cordova.labs.keyboard.Keyboard\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "adobe-mobile-services": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "android.support.v4": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "com.google.playservices": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "com.hpeit.mobile.plugin.hpeCertPinning": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "com.hpeit.mobile.plugin.nativeStorage": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "com.hpeit.mobile.plugin.SGWMobile": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "com.vladstirbu.cordova.promise": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-appversion": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-keyboard": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "org.jboss.aerogear.cordova.push": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        },
+        "cordova-plugin-http": {
+            "PACKAGE_NAME": "com.hpe.cpx.prmobile"
+        }
+    }
+}

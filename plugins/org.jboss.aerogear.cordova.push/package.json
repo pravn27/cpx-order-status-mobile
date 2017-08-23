@@ -1,0 +1,17 @@
+{
+    "version": "1.0.2",
+    "name": "org.jboss.aerogear.cordova.push",
+    "cordova_name": "\n    AeroGear PushPlugin\n  ",
+    "description": "\n    This plugin allows your application to receive push notifications on both Android and iOS devices. Using the\n    AeroGear Unified Push Server.\n  ",
+    "license": "\n    MIT\n  ",
+    "platforms": [
+        "android",
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.4.0"
+        }
+    ]
+}

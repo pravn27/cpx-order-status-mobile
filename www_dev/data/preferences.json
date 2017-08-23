@@ -1,0 +1,23 @@
+[
+  {
+    "list": [
+      {
+        "name": "ORDER_STATUS_CHANGE",
+        "value": "true"
+      },
+      {
+        "name": "ORDER_CANCELED",
+        "value": "true"
+      },
+      {
+        "name": "SHIPPING_UPDATE",
+        "value": "true"
+      },
+      {
+        "name": "INVOICE_ AVAILABLE",
+        "value": "true"
+      }
+    ],
+    "group": "ORDER_ALERTS"
+  }
+]

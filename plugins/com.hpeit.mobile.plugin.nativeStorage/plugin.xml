@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.hpeit.mobile.plugin.nativeStorage"
+      version="9.0.2">
+<!--
+    <engines>
+	    <engine name="cordova-android" />
+	    <engine name="cordova-ios" />
+  	</engines>
+-->
+
+    <name>NativeStoragePlugin</name>
+    <description>Storage for native API</description>
+    <license>HPE</license>
+    <keywords>security gateway,SSO</keywords>
+
+    <js-module src="www/NativeStoragePlugin.js" name="NativeStoragePlugin">
+        <clobbers target="window.NativeStoragePlugin" />
+    </js-module>
+
+    <!-- android -->
+    <!-- NativeStoragePlugin -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SharedPreferencesDataStoragePlugin">
+                <param name="android-package" value="com.hpeit.mobile.login.SharedPreferencesDataStoragePlugin"/>
+            </feature>
+        </config-file>
+		
+<!--
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+			<uses-permission android:name="android.permission.INTERNET"/>
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		</config-file>
+-->
+
+        <source-file src="src/android/SharedPreferencesDataStoragePlugin.java" target-dir="src/com/hpeit/mobile/login" />
+        <source-file src="src/android/dataStorage/IDataStorage.java" target-dir="src/com/hpeit/mobile/login/dataStorage" />
+        <source-file src="src/android/dataStorage/LoginDataStorageStatus.java" target-dir="src/com/hpeit/mobile/login/dataStorage" />
+        <source-file src="src/android/dataStorage/SharedPreferencesDataStorage.java" target-dir="src/com/hpeit/mobile/login/dataStorage" />      
+        <source-file src="src/android/dataStorage/SQLiteDataStorage.java" target-dir="src/com/hpeit/mobile/login/dataStorage" />      
+		<info>
+Before moving to production, don't forget to define in the application manifest "com.hpeit.mobile" as "Shared user id" to enable Single Sign-On.
+During development and test, this can be left empty to avoid installation conflicts, but Single Sign-On won't be enabled.
+		</info>
+    </platform>
+
+    <platform name="ios">    
+        <config-file target="config.xml" parent="/*">
+            <feature name="SharedPreferencesDataStoragePlugin">
+                <param name="ios-package" value="SharedPreferencesDataStoragePlugin" /> 
+            </feature>
+        </config-file>
+        <header-file src="src/ios/SharedPreferencesDataStoragePlugin.h" />
+        <source-file src="src/ios/SharedPreferencesDataStoragePlugin.m" />
+        <header-file src="src/ios/KeychainRepository.h" />
+        <source-file src="src/ios/KeychainRepository.m" />
+        
+		<resource-file src="src/ios/sso-keychain.plist" />
+		
+        <framework src="Security.framework" />        
+		<info>
+Don't forget to enable Keychain sharing with Keychain group "com.hpeit.mobile" in your project capabilities to enable Single Sign-On
+		</info>
+
+    </platform> 
+</plugin>
